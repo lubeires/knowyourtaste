@@ -5,11 +5,12 @@ const randomstring = require("randomstring");
 const axios = require("axios");
 const express = require("express");
 const app = express();
-const port = 8888;
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URI = process.env.REDIRECT_URI;
+const CLIENT_URI = process.env.CLIENT_URI || "http://localhost:3000";
+const PORT = process.env.PORT || 8888;
 
 const SCOPE = "user-top-read playlist-modify-public";
 const STATE = randomstring.generate(16);
@@ -57,7 +58,7 @@ app.get("/callback", (req, res) => {
           expires_in,
         });
 
-        res.redirect(`http://localhost:3000/?${queryParams}`);
+        res.redirect(`${CLIENT_URI}?${queryParams}`);
       } else {
         res.redirect(`/?${querystring.stringify({ error: "invalid_token" })}`);
       }
@@ -90,6 +91,6 @@ app.get("/refresh_token", (req, res) => {
     .catch((error) => res.send(error));
 });
 
-app.listen(port, () => {
-  console.log(`express app listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`express app listening at http://localhost:${PORT}`);
 });

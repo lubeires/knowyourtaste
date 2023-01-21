@@ -1,5 +1,10 @@
 import logo from "../logo.png";
 
+const LOGIN_URI =
+  process.env.NODE_ENV !== "production"
+    ? "http://localhost:8888/login"
+    : "https://knowyourtaste-api.onrender.com/login";
+
 const Login = () => {
   return (
     <div id="login-container">
@@ -9,7 +14,7 @@ const Login = () => {
         Spotify from the last four weeks, six months or all time and
         automatically generate playlists with your most played tracks.
       </p>
-      <a id="login-button" href="http://localhost:8888/login">
+      <a id="login-button" href={LOGIN_URI}>
         <i className="fa-brands fa-spotify fa-xl"></i>
         Connect to spotify
       </a>
