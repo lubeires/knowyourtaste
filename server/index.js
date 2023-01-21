@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const querystring = require("node:querystring");
+const querystring = require("querystring");
 const randomstring = require("randomstring");
 const axios = require("axios");
 const express = require("express");
