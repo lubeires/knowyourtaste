@@ -6,6 +6,11 @@ In addition to also making it possible to create playlists containing the top tr
 
 Note: as the app is in development mode, it is necessary for the user's spotify account email to be manually registered by me in order to be able to use it.
 
+<p align="center">
+<img src="https://i.imgur.com/qHVaQRa.gif" />
+<img src="https://i.imgur.com/MPp9tux.gif" />
+</p>
+
 ## How to run locally
 
 ### Prerequisites
