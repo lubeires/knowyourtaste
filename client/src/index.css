@@ -24,7 +24,7 @@ a {
 
 /*===================== LOGIN =====================*/
 #login-container {
-  height: 100vh;
+  height: 90vh;
 
   display: flex;
   flex-direction: column;
@@ -285,9 +285,6 @@ footer {
   font-weight: 300;
 
   padding-block: 0.6rem;
-
-  position: fixed;
-  bottom: 0;
 }
 
 footer a {
@@ -329,25 +326,42 @@ footer a {
   }
 
   #display {
-    max-width: 100%;
-    width: 90vw;
+    max-width: 70vw;
+  }
+
+  #container {
+    gap: 1rem;
   }
 
   .track,
   .artist,
   .genre {
     flex-direction: row;
-    width: 90vw;
+    width: 100%;
   }
 
   .track,
   .artist {
-    height: 4.6rem;
+    height: 3.6rem;
   }
 
   .track img,
   .artist img {
-    height: 4.6rem;
-    width: 4.6rem;
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 5rem;
+  }
+
+  .info h4 {
+    font-size: 1rem;
+  }
+  .info h3 {
+    font-size: 1.2rem;
+  }
+  .info h2 {
+    font-size: 1.4rem;
+  }
+  .info small {
+    font-size: 0.8rem;
   }
 }

@@ -4,6 +4,8 @@ Web application that, through requests to the [Spotify web API](https://develope
 
 In addition to also making it possible to create playlists containing the top tracks of each of the mentioned time ranges.
 
+Note: as the app is in development mode, it is necessary for the user's spotify account email to be manually registered by me in order to be able to use it.
+
 ## How to run locally
 
 ### Prerequisites
