@@ -3,12 +3,12 @@ const Footer = () => {
     <footer>
       &copy; 2023 Luana Palhares
       <a
-        href="https://github.com/plhrsl/knowyourtaste"
+        href="https://github.com/lubeires/knowyourtaste"
         rel="noreferrer"
         target="_blank"
       >
         <i className="fa-brands fa-github fa-lg"></i>
-        plhrsl
+        lubeires
       </a>
     </footer>
   );
